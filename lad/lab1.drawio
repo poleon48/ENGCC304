@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="หน้า-1" id="6U62epfuQDGqGS7bzeMD">
+    <mxGraphModel dx="448" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="main-title" value="Flowchart: main" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="365" y="40" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="main-start" value="เริ่ม" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="main-declare" value="ประกาศตัวแปร/กำหนดค่าเริ่มต้น&lt;br&gt;char Name[50]&lt;br&gt;int Age = 0" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="200" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="main-start" target="main-declare">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="170" as="sourcePoint" />
+            <mxPoint x="425" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main-output-prompt-name" value="แสดงผล &quot;Enter your name: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="310" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="main-declare" target="main-output-prompt-name">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="280" as="sourcePoint" />
+            <mxPoint x="425" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main-input-name" value="รับค่า Name (scanf(&quot;%s&quot;, Name))" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="410" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="main-output-prompt-name" target="main-input-name">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="380" as="sourcePoint" />
+            <mxPoint x="425" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main-output-prompt-age" value="แสดงผล &quot;Enter your age: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="510" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="main-input-name" target="main-output-prompt-age">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="480" as="sourcePoint" />
+            <mxPoint x="425" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main-input-age" value="รับค่า Age (scanf(&quot;%d&quot;, &amp;Age))" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="610" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="main-output-prompt-age" target="main-input-age">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="580" as="sourcePoint" />
+            <mxPoint x="425" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main-output-result" value="แสดงผล&lt;br&gt;* ข้อความคั่น&lt;br&gt;* &quot;Hello &quot; + Name&lt;br&gt;* &quot;Age = &quot; + Age" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="710" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="main-input-age" target="main-output-result">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="680" as="sourcePoint" />
+            <mxPoint x="425" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main-stop" value="จบ" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="830" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="main-output-result" target="main-stop">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="800" as="sourcePoint" />
+            <mxPoint x="425" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
